@@ -72,6 +72,8 @@ interface MeetingContextType {
   setIsInviteModalOpen: (open: boolean) => void;
   isPostMeetingModalOpen: boolean;
   setIsPostMeetingModalOpen: (open: boolean) => void;
+  isReflectionModalOpen: boolean;
+  setIsReflectionModalOpen: (open: boolean) => void;
 
   // Actions & Controls
   toggleMic: () => void;
@@ -189,6 +191,7 @@ export const MeetingProvider: React.FC<{ children: React.ReactNode }> = ({ child
   const [isTranscriptOpen, setIsTranscriptOpen] = useState(false);
   const [isInviteModalOpen, setIsInviteModalOpen] = useState(false);
   const [isPostMeetingModalOpen, setIsPostMeetingModalOpen] = useState(false);
+  const [isReflectionModalOpen, setIsReflectionModalOpen] = useState(false);
 
   // Floating Reactions
   const [floatingReactions, setFloatingReactions] = useState<FloatingReaction[]>([]);
@@ -645,6 +648,8 @@ export const MeetingProvider: React.FC<{ children: React.ReactNode }> = ({ child
         setIsInviteModalOpen,
         isPostMeetingModalOpen,
         setIsPostMeetingModalOpen,
+        isReflectionModalOpen,
+        setIsReflectionModalOpen,
         toggleMic,
         toggleVideo,
         toggleScreenShare,
