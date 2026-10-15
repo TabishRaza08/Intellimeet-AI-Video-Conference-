@@ -1,0 +1,6 @@
+{
+  "name": "IntellMeet - AI Enterprise Video Conferencing",
+  "description": "AI-powered enterprise meeting and collaboration platform with real-time video conferencing, live transcription, smart action item extraction, and collaborative workspaces.",
+  "requestFramePermissions": ["camera", "microphone", "display-capture"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
